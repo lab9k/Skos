@@ -1,0 +1,39 @@
+\documentclass[12pt, letterpaper, oneside]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[dutch]{babel}
+
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage{changepage}
+
+\title{Lab9K\endgraf\textbf{Verslag Skos}}
+\date{29/01/2018}
+\author{\textit{Jorg Wieme}
+	 	\and
+ 		\textit{Tom Lauwaerts}}
+
+% Rename commands to Dutch alternative
+\renewcommand{\contentsname}{Inhoudstafel}
+\renewcommand{\figurename}{Figuur}
+
+% Style paragrahs
+\setlength{\parskip}{\baselineskip} % increase vertical spacing between paragraphs
+\setlength{\parindent}{0pt} % remove indent at start of paragraphs
+\begin{document}
+
+\begin{titlepage}
+% Create title page without pagenumber (with style empty)
+\maketitle
+\thispagestyle{empty}
+\end{titlepage}
+
+\begin{adjustwidth}{6.0em}{6.0em}
+\centering \textit{Dit is een verslag van Skos.}
+\end{adjustwidth}
+\newpage
+
+% Create table of contents and start a new page
+\tableofcontents
+
+
+\end{document}
