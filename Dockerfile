@@ -3,8 +3,11 @@
 # setup apache server
 FROM ubuntu:16.04
 
+# needed for last line
+ADD install_skosmos.sh home/install_skosmos.sh
+RUN chmod u+x home/install_skosmos.sh
 
-
+# install all needed packages
 RUN apt-get update
 RUN apt-get install -y openjdk-8-jre
 RUN apt-get install -y nano
@@ -17,10 +20,10 @@ RUN apt-get install -y php-xml
 RUN apt-get install -y php-mbstring
 RUN apt-get install -y php7.0-curl
 RUN apt-get install -y locales
-
-
-# TODO apt install php apache
-
-# install git and clone skosmos
 RUN apt-get install -y git
+
+# include skosmos on image
 RUN git clone -b v1.10-maintenance https://github.com/NatLibFi/Skosmos.git skosmos
+
+# install skosmos
+RUN home/install_skosmos.sh
