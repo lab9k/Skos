@@ -24,3 +24,6 @@ RUN apt-get install -y locales
 # install git and clone skosmos
 RUN apt-get install -y git
 RUN git clone -b v1.10-maintenance https://github.com/NatLibFi/Skosmos.git skosmos
+RUN wget https://raw.githubusercontent.com/lab9k/Skos/develop/install_skosmos.sh installer.sh
+RUN chmod u+x installer.sh
+CMD [ "./installer.sh" ]
