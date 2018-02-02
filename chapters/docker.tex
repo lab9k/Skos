@@ -1,0 +1,40 @@
+% Docker
+Skosmos werd opgezet a.d.h.v. Docker. De Dockerfile kan men \href{https://github.com/lab9k/Skos/blob/master/Dockerfile}{hier} vinden. In de volgende paragrafen zullen we een korte samenvatting geven over hoe Docker werkt en kan gebruikt worden.
+
+\subsection{Opzetten in Docker}
+Allereerst moet Docker natuurlijk geïnstalleerd worden, we raden tenhartste aan dit op een linux distributie te doen.\footnote{Gebruik deze handige  \href{https://docs.docker.com/install/linux/docker-ce/ubuntu/}{install guide} voor ubuntu.}
+
+Met Docker kan men een \textit{image} die de nodige software en configuratie bevatten voor applicatie. Zo worden alle applicaties en hun dependencies mooi verzameld en afgesloten van de buitenwereld. Een \textbf{image} kan men beschouwen als een \textit{class definition}. De afgeleide instanties van deze klassen noemen we \textbf{containers}.
+
+Deze \href{https://semaphoreci.com/community/tutorials/dockerizing-a-php-application}{tutorial} is alvast een goede inleiding tot Docker. We werkten echter niet met VM's en docker-machine zoals in het eerste deel van de tutorial wordt besproken. 
+
+\subsection{Workflow}
+Als men met Docker werkt zal met bij het opzetten van een container meestal de volgende stappen steeds uitvoeren:
+
+
+
+% TODO add as appendix + remove old image and container
+\begin{minted}{bash}
+#!/bin/bash
+
+image_name="kies een naam"
+container_name="kies een naam"
+
+# build image
+sudo docker build -t $image_name .
+
+# build container
+sudo docker run -itd --name=$container_name $image_name
+
+# attach to container with bash
+sudo docker exec -it $container_name bash
+
+\end{minted}
+
+\subsection{Dockerfile}
+% TODO
+
+% TODO https://github.com/moby/moby/issues/3378
+
+\subsection{Container networking}
+% TODO

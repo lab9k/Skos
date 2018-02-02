@@ -8,16 +8,12 @@
 
 \usepackage{hyperref}
 
-\title{Lab9K\endgraf\textbf{Verslag Skos}}
-\date{29/01/2018}
+\usepackage{minted} % code highlighting
+\usemintedstyle{bash}
 
-\author{\textit{Jorg Wieme}
-	 	\and
- 		\textit{Tom Lauwaerts}}
-
-% Rename commands to Dutch alternative
-\renewcommand{\contentsname}{Inhoudstafel}
-\renewcommand{\figurename}{Figuur}
+\title{\textbf{Verslag SKOS}}
+\date{}
+\author{Lab9K}
 
 % Style paragrahs
 \setlength{\parskip}{\baselineskip} % increase vertical spacing between paragraphs
@@ -32,30 +28,15 @@
 }
 
 \begin{document}
-
-\begin{titlepage}
-% Create title page without pagenumber (with style empty)
-\maketitle
-\thispagestyle{empty}
-\end{titlepage}
-
-\begin{adjustwidth}{6.0em}{6.0em}
-\centering \textit{Dit is een verslag van Skos.}
-\end{adjustwidth}
-\newpage
-
-% Create table of contents and start a new page
-\tableofcontents
-
-
-% Appendices
-\newpage
-\appendix
-
-\section{Links}
-% handige links
-\begin{enumerate}
-	\item \href{http://blog.sparna.fr/2017/02/06/unesco-thesaurus-published-with-semantic-web-standards-and-open-source-software/}{Unesco rapport}
-\end{enumerate}
-
+	
+	% Create title
+	\maketitle
+	\par\noindent\rule{\textwidth}{0.4pt}
+	
+	\section{Docker}
+	\input{chapters/docker}
+	
+	\section{Skosmos}
+	\input{chapters/skosmos}
+	
 \end{document}
