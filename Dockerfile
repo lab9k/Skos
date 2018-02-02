@@ -7,6 +7,16 @@ FROM ubuntu:16.04
 
 RUN apt-get update
 RUN apt-get install -y openjdk-8-jre
+RUN apt-get install -y 
+RUN apt-get install -y 
+RUN apt-get install -y wget
+RUN apt-get install -y ruby
+RUN apt-get install -y apache2 
+RUN apt-get install -y libapache2-mod-php7.0
+RUN apt-get install -y php-xml
+RUN apt-get install -y php-mbstring
+RUN apt-get install -y locales
+
 
 # TODO apt install php apache
 
