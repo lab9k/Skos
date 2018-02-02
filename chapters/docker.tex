@@ -20,11 +20,27 @@ $ docker exec -it apache_server bash
 
 % TODO Dockerfile
 
-Deze \href{https://semaphoreci.com/community/tutorials/dockerizing-a-php-application}{tutorial} is alvast een goede inleiding tot Docker. We werkten echter niet met VM's en docker-machine zoals in het eerste deel van de tutorial wordt besproken. 
+Voor een uitgebreidere uitleg is deze \href{https://semaphoreci.com/community/tutorials/dockerizing-a-php-application}{tutorial} alvast een goede inleiding tot Docker. We werkten echter niet met VM's en docker-machine zoals in het eerste deel van de tutorial wordt besproken, je kan dit dus negeren. 
+
+\subsection{Dockerfile}
+We kunnen nu goed overweg met docker containers, hoe komen we echter aan een image? Dit doen we met een \textbf{Dockerfile}. Op \href{https://hub.docker.com/}{Docker HUB} vind je al Dockerfiles van de community. We willen natuurlijk op al bestaande images uitbreiden dit kan makkelijk met FROM. 
+
+\begin{minted}{bash}
+# Dockerfile
+FROM nimmis/apache-php5
+
+COPY 000-default.conf /etc/apache2/sites-available/000-default.conf
+
+EXPOSE 80
+EXPOSE 443
+\end{minted}
+
+Het FROM commando geeft ons dan een apache web server met php5. Daarop kunnen we dan allerlei extra configuratie aan toevoegen met commando's zoals COPY, RUN, EXPOSE, enzovoort.
+
+Om even onze klasse analogie verder te zetten kunnen we hier \textit{nimmis/apache-php5} als generieke basisklasse zien, waarvan de klasse die onze Dockerfile maakt overerft. Docker ondersteund enkel enkelvoudige overerving. We kunnen dus maar 1 FROM hebben per image die we maken.\footnote{Zie deze  \href{https://github.com/moby/moby/issues/3378}{github issue} voor verdere uitleg.}
 
 \subsection{Workflow}
 Als men met Docker werkt zal met bij het opzetten van een container meestal de volgende stappen steeds uitvoeren:
-
 
 % TODO add as appendix + remove old image and container
 \begin{minted}{bash}
@@ -43,11 +59,6 @@ sudo docker run -itd --name=$container_name $image_name
 sudo docker exec -it $container_name bash
 
 \end{minted}
-
-\subsection{Dockerfile}
-% TODO
-
-% TODO https://github.com/moby/moby/issues/3378
 
 \subsection{Container networking}
 Als je Docker installeerd maakt het automatisch de volgende 3 netwerken aan.
