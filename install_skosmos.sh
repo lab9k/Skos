@@ -24,3 +24,33 @@ echo -e 'export FUSEKI_HOME=/opt/fuseki\nexport FUSEKI_BASE=/etc/fuseki\n\nFUSEK
 cd /etc/init.d
 ln -s /opt/fuseki/fuseki .
 update-rc.d fuseki defaults
+service fuseki start
+curl --data "dbName=skosmos&dbType=tdb" http://localhost:3030/$/datasets/
+> /etc/fuseki/configuration/skosmos.ttl 
+wget https://raw.githubusercontent.com/lab9k/Skos/develop/Needed_files/skosmos.ttl
+cat skosmos.ttl >> /etc/fuseki/configuration/skosmos.ttl
+rm skosmos.ttl
+cd 
+wget http://skos.um.es/unescothes/unescothes.ttl
+/opt/fuseki/bin/s-put http://localhost:3030/skosmos/data default unescothes.ttl
+mv /skosmos /var/www/html/
+cd
+> /etc/apache2/sites-enabled/000-default.conf
+wget https://raw.githubusercontent.com/lab9k/Skos/develop/Needed_files/Configure_apache
+cat Configure_apache >> /etc/apache2/sites-enabled/000-default.conf
+rm Configure_apache
+cd /var/www/html/skosmos
+curl -sS https://getcomposer.org/installer | php
+php composer.phar install --no-dev
+cp config.inc.dist config.inc
+cp vocabularies.ttl.dist vocabularies.ttl
+wget https://raw.githubusercontent.com/lab9k/Skos/develop/Needed_files/Config
+> config.inc
+cat Config >> config.inc
+rm Config
+locale-gen en_GB.utf8
+locale-gen de_DE.utf8
+wget https://raw.githubusercontent.com/lab9k/Skos/develop/Needed_files/Vocabularies
+> vocabularies.ttl
+cat Vocabularies >> vocabularies.ttl
+rm Vocabularies 
