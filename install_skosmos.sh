@@ -59,3 +59,4 @@ wget https://raw.githubusercontent.com/lab9k/Skos/develop/Needed_files/Vocabular
 cat Vocabularies >> vocabularies.ttl
 rm Vocabularies 
 service fuseki start
+service apache2 start
