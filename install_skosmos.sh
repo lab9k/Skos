@@ -34,6 +34,7 @@ service fuseki stop
 wget https://raw.githubusercontent.com/lab9k/Skos/develop/Needed_files/skosmos.ttl
 cat skosmos.ttl >> /etc/fuseki/configuration/skosmos.ttl
 rm skosmos.ttl
+service fuseki start
 cd 
 wget http://skos.um.es/unescothes/unescothes.ttl
 /opt/fuseki/bin/s-put http://localhost:3030/skosmos/data default unescothes.ttl
@@ -58,5 +59,4 @@ wget https://raw.githubusercontent.com/lab9k/Skos/develop/Needed_files/Vocabular
 > vocabularies.ttl
 cat Vocabularies >> vocabularies.ttl
 rm Vocabularies 
-service fuseki start
 service apache2 start
