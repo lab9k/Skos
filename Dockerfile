@@ -15,6 +15,7 @@ RUN apt-get install -y apache2
 RUN apt-get install -y libapache2-mod-php7.0
 RUN apt-get install -y php-xml
 RUN apt-get install -y php-mbstring
+RUN apt-get install -y php7.0-curl
 RUN apt-get install -y locales
 
 
