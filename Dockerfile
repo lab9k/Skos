@@ -12,4 +12,4 @@ RUN apt-get install -y openjdk-8-jre
 
 # install git and clone skosmos
 RUN apt-get install -y git
-RUN git clone https://github.com/NatLibFi/Skosmos.git skosmos
+RUN git clone -b v1.10-maintenance https://github.com/NatLibFi/Skosmos.git skosmos
