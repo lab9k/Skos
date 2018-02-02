@@ -6,11 +6,24 @@ Allereerst moet Docker natuurlijk geïnstalleerd worden, we raden tenhartste aan
 
 Met Docker kan men een \textit{image} die de nodige software en configuratie bevatten voor applicatie. Zo worden alle applicaties en hun dependencies mooi verzameld en afgesloten van de buitenwereld. Een \textbf{image} kan men beschouwen als een \textit{class definition}. De afgeleide instanties van deze klassen noemen we \textbf{containers}.
 
+Je kan uiteraard meerder intstanties van dezelfde image maken, alle containers die op de machine runnen kan je oplijsten met \mintinline{bash}{docker ps}. Gebruik de \textit{--all} flag om ook de containers die niet runnen te zien. Om een instantie van een image te maken gebruik je het commando \textit{docker run}.
+
+\begin{minted}{bash}
+$ docker run -d --name=<container_name> <image_name>
+\end{minted}
+
+De \textit{-d} flag zorgt ervoor dat de container na aanmaak in de achtergrond te runnen. De output van het commando is de container. Men kan nu toegang verkrijgen tot de nieuwe container door het \textit{bash} commando uit te voeren en aan onze terminal te hangen.
+
+\begin{minted}{bash}
+$ docker exec -it apache_server bash
+\end{minted}
+
+% TODO Dockerfile
+
 Deze \href{https://semaphoreci.com/community/tutorials/dockerizing-a-php-application}{tutorial} is alvast een goede inleiding tot Docker. We werkten echter niet met VM's en docker-machine zoals in het eerste deel van de tutorial wordt besproken. 
 
 \subsection{Workflow}
 Als men met Docker werkt zal met bij het opzetten van een container meestal de volgende stappen steeds uitvoeren:
-
 
 
 % TODO add as appendix + remove old image and container
@@ -37,4 +50,23 @@ sudo docker exec -it $container_name bash
 % TODO https://github.com/moby/moby/issues/3378
 
 \subsection{Container networking}
-% TODO
+Als je Docker installeerd maakt het automatisch de volgende 3 netwerken aan.
+
+\begin{minted}{bash}
+$ docker network ls
+
+NETWORK ID          NAME                DRIVER
+7fca4eb8c647        bridge              bridge
+9f904ee27bf5        none                null
+cf03ee007fb4        host                host
+\end{minted}
+
+Het \textit{bridge} netwerk stelt het \textit{docker0} netwerk dat deel uitmaakt van de host's netwerk stack. Dit kan je ook nagaan met het commando \mintinline{bash}{ip addr show}.
+
+De Docker daemon connecteert containers standaard met dit netwerk. Wilt men echter een container aan een andere netwerk - bv. het host netwerk - toevoegen kan dit met de \textit{--network} flag bij het run commando.
+
+\begin{minted}{bash}
+sudo docker run -itd --network=host --name=<container_name> <image_name>
+\end{minted}
+
+Het \textit{host} network voegt een container op de host's netwerk stack, dus op het netwerk niveau is er geen isolatie tussen de container en de host. Met andere woorden als de container een web server draait op poort 80 dan is deze ook beschikbaar op poort 80 van de host machine.
