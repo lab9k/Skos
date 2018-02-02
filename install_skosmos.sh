@@ -20,7 +20,10 @@ ln -s /var/lib/fuseki/* .
 ln -s /var/log/fuseki logs
 cd ../default
 touch fuseki
-echo -e 'export FUSEKI_HOME=/opt/fuseki\nexport FUSEKI_BASE=/etc/fuseki\n\nFUSEKI_USER=fuseki\nJAVA_OPTIONS="-Xmx2048M"' >> fuseki
+echo 'export FUSEKI_HOME=/opt/fuseki' >> fuseki
+echo 'export FUSEKI_BASE=/etc/fuseki' >> fuseki
+echo 'FUSEKI_USER=fuseki' >> fuseki
+echo 'JAVA_OPTIONS="-Xmx2048M"' >> fuseki
 cd /etc/init.d
 ln -s /opt/fuseki/fuseki .
 update-rc.d fuseki defaults
