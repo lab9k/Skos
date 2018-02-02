@@ -26,6 +26,7 @@ ln -s /opt/fuseki/fuseki .
 update-rc.d fuseki defaults
 service fuseki start
 curl --data "dbName=skosmos&dbType=tdb" http://localhost:3030/$/datasets/
+service fuseki stop
 > /etc/fuseki/configuration/skosmos.ttl 
 wget https://raw.githubusercontent.com/lab9k/Skos/develop/Needed_files/skosmos.ttl
 cat skosmos.ttl >> /etc/fuseki/configuration/skosmos.ttl
