@@ -28,7 +28,7 @@ define("TEMPLATE_CACHE", "/tmp/skosmos-template-cache");
 
 // default sparql-query extension, or "Generic" for plain SPARQL 1.1
 // set to "JenaText" instead if you use Fuseki with jena-text index
-define("DEFAULT_SPARQL_DIALECT", "JenaText")
+define("DEFAULT_SPARQL_DIALECT", "JenaText");
 
 // default email address to send the feedback
 define("FEEDBACK_ADDRESS", "");
