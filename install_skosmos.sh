@@ -67,4 +67,5 @@ service apache2 start
 sleep 2
 service fuseki restart
 sleep 2
-# add vocbench script
+cd /home
+sh ./install_vocbench.sh
