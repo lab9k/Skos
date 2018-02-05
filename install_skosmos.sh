@@ -28,13 +28,15 @@ cd /etc/init.d
 ln -s /opt/fuseki/fuseki .
 update-rc.d fuseki defaults
 service fuseki start
+sleep 5
 curl --data "dbName=skosmos&dbType=tdb" http://127.0.0.1:3030/$/datasets/
 service fuseki stop
-touch /etc/fuseki/configuration/skosmos.ttl 
+> /etc/fuseki/configuration/skosmos.ttl
 wget https://raw.githubusercontent.com/lab9k/Skos/develop/Needed_files/skosmos.ttl
 cat skosmos.ttl >> /etc/fuseki/configuration/skosmos.ttl
 rm skosmos.ttl
 service fuseki start
+sleep 5
 cd 
 wget http://skos.um.es/unescothes/unescothes.ttl
 /opt/fuseki/bin/s-put http://127.0.0.1:3030/skosmos/data default unescothes.ttl
