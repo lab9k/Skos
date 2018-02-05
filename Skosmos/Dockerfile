@@ -7,10 +7,6 @@ FROM ubuntu:16.04
 ADD install_skosmos.sh home/install_skosmos.sh
 RUN chmod u+x home/install_skosmos.sh
 
-# used in installer
-ADD install_vocbench.sh home/install_vocbench.sh
-RUN chmod u+x home/install_vocbench.sh
-
 # install all needed packages
 RUN apt-get update
 RUN apt-get install -y openjdk-8-jre
