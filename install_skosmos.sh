@@ -47,7 +47,7 @@ wget https://raw.githubusercontent.com/lab9k/Skos/develop/Needed_files/Configure
 cat Configure_apache >> /etc/apache2/sites-enabled/000-default.conf
 rm Configure_apache
 a2enmod rewrite
-service apache2 rewrite
+service apache2 restart
 cd /var/www/html/skosmos
 curl -sS https://getcomposer.org/installer | php
 php composer.phar install --no-dev
@@ -65,6 +65,6 @@ cat Vocabularies >> vocabularies.ttl
 rm Vocabularies 
 service apache2 start
 sleep 2
-service fuseki start
+service fuseki restart
 sleep 2
 # add vocbench script
