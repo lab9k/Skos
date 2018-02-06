@@ -13,6 +13,7 @@ container_name="vocbench"
 
 # remove old container
 echo "removing..."
+# TODO: download /home/SemanticTurkeyData to host.
 sudo docker stop $container_name
 sudo docker rm $container_name
 
@@ -36,10 +37,14 @@ elif [[ "$unamestr" == 'Darwin' ]]; then
 fi
 
 if [[ $platform == 'linux' ]]; then
+   echo "Using Linux platform command"
    sudo docker run -itd --network=host --name=$container_name $image_name
 elif [[ $platform == 'Darwin' ]]; then
-   sudo docker run -itd -p 1979:1979 --name=$container_name $image_name
+   echo "Using Darwin platform command"
+   sudo docker run -it -p 1979:1979 --name=$container_name $image_name
 fi
 
 # attach to container with bash
-sudo docker exec -it $container_name bash
+# sudo docker exec -it $container_name bash
+sudo docker exec -d $container_name ./home/install_vocbench.sh
+# TODO: upload downloaded folder back into new container.

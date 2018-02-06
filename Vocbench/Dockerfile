@@ -21,4 +21,4 @@ RUN apt-get install -y git
 #RUN apt-get install -y dos2unix
 
 # install vocbench
-RUN home/install_vocbench.sh
+# RUN home/install_vocbench.sh
