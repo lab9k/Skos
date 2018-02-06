@@ -1,3 +1,4 @@
+#!/bin/bash
 cd home
 wget https://archive.apache.org/dist/jena/binaries/apache-jena-fuseki-3.6.0.tar.gz
 cd /opt

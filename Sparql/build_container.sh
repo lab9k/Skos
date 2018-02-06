@@ -30,4 +30,5 @@ sudo docker build -t $image_name .
 sudo docker run -itd --network=host --name=$container_name $image_name
 
 # attach to container with bash
-sudo docker exec -it $container_name bash
+#sudo docker exec -it $container_name bash
+sudo docker exec -d $container_name ./home/install_sparql.sh

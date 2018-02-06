@@ -13,7 +13,6 @@ RUN apt-get install -y openjdk-8-jre
 RUN apt-get install -y curl
 RUN apt-get install -y wget
 RUN apt-get install -y ruby
-#apache and php maybe not necessary
 
 # install skosmos
-RUN home/install_sparql.sh
+#RUN home/install_sparql.sh
