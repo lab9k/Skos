@@ -47,4 +47,4 @@ fi
 # attach to container with bash
 # sudo docker exec -it $container_name bash
 sudo docker exec -d $container_name ./home/install_vocbench.sh
-# TODO: upload downloaded folder back into new container.
+
