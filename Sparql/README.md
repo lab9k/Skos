@@ -1,15 +1,12 @@
-# Skosmos
+# Sparql
 ## Information Dockerfile Skosmos
 
 What we install:
 * phusion/baseimage:<version> (on 2/6/18 version is 0.10.0)
 * java jre 8
 * cURL
-* unzip
+* ruby
 * wget
-* apache2, php module
-* php and packages
-* locale
 
 > All the needed file get imported or you can find them in this repo.
 
@@ -26,7 +23,7 @@ Because we use phusion/baseimage we can use `/sbin/my_init`. Therefor we let the
 
 ```
 git clone https://github.com/lab9k/Skos
-cd Skos/Skosmos/
+cd Skos/Sparql/
 ./build_container.sh
 ```
 

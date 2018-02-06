@@ -15,5 +15,5 @@ RUN apt-get install -y curl
 RUN apt-get install -y wget
 RUN apt-get install -y ruby
 
-# install skosmos
+# install sparql
 #RUN home/install_sparql.sh
