@@ -27,8 +27,21 @@ echo "building..."
 sudo docker build -t $image_name .
 
 # build container
-sudo docker run -itd --network=host --name=$container_name $image_name
+platform='unknown'
+unamestr=`uname`
+if [[ "$unamestr" == 'Linux' ]]; then
+   platform='linux'
+elif [[ "$unamestr" == 'Darwin' ]]; then
+   platform='Darwin'
+fi
 
+if [[ $platform == 'linux' ]]; then
+   echo "Using Linux platform command"
+   sudo docker run -itd --network=host --name=$container_name $image_name
+elif [[ $platform == 'Darwin' ]]; then
+   echo "Using Darwin platform command"
+   sudo docker run -it -p 1979:1979 -d --name=$container_name $image_name
+fi
 # attach to container with bash
 #sudo docker exec -it $container_name bash
 sudo docker exec -d $container_name ./home/install_sparql.sh
