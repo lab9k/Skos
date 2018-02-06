@@ -5,4 +5,4 @@ cd semanticturkey-2.0/bin/
 chmod +x *
 apt-get install -y dos2unix
 dos2unix *
-./st_server_run
+nohup ./st_server_run &>/dev/null &
