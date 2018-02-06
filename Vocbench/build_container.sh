@@ -27,7 +27,19 @@ echo "building..."
 sudo docker build -t $image_name .
 
 # build container
-sudo docker run -itd --network=host --name=$container_name $image_name
+platform='unknown'
+unamestr=`uname`
+if [[ "$unamestr" == 'Linux' ]]; then
+   platform='linux'
+elif [[ "$unamestr" == 'Darwin' ]]; then
+   platform='Darwin'
+fi
+
+if [[ $platform == 'linux' ]]; then
+   sudo docker run -itd --network=host --name=$container_name $image_name
+elif [[ $platform == 'Darwin' ]]; then
+   sudo docker run -itd -p 1979:1979 --name=$container_name $image_name
+fi
 
 # attach to container with bash
 sudo docker exec -it $container_name bash
