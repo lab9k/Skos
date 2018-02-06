@@ -14,8 +14,10 @@ container_name="vocbench"
 # remove old container
 echo "removing..."
 # TODO: download /home/SemanticTurkeyData to host.
+sudo docker cp vocbench:/home/SemanticTurkeyData /tmp
 sudo docker stop $container_name
 sudo docker rm $container_name
+
 
 # remove old image
 sudo docker rmi $image_name
@@ -41,10 +43,11 @@ if [[ $platform == 'linux' ]]; then
    sudo docker run -itd --network=host --name=$container_name $image_name
 elif [[ $platform == 'Darwin' ]]; then
    echo "Using Darwin platform command"
-   sudo docker run -it -p 1979:1979 --name=$container_name $image_name
+   sudo docker run -it -p 1979:1979 -d --name=$container_name $image_name
 fi
 
+echo "Installing vocbench in container."
+sudo docker exec -d $container_name ./home/install_vocbench.sh
 # attach to container with bash
 # sudo docker exec -it $container_name bash
-sudo docker exec -d $container_name ./home/install_vocbench.sh
-
+sudo docker cp /tmp/SemanticTurkeyData vocbench:/home
