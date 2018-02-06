@@ -1,5 +1,5 @@
 #https://docs.docker.com/engine/userguide/networking/overlay-standalone-swarm/
-#Setups up an overlay network for an application of which the containers are on different hosts
+#Sets up an overlay network for an application of which the containers are on different hosts
 #make sure docker & docker machine & virtual box are installed
 
 #**SETUP KEY-VALUE STORE**
