@@ -5,6 +5,7 @@ FROM ubuntu:16.04
 
 # needed for last line
 ADD install_sparql.sh home/install_sparql.sh
+ADD shiro.ini.mac home/shiro.ini
 RUN chmod u+x home/install_sparql.sh
 
 # install all needed packages

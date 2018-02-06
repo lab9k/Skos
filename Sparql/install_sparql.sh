@@ -1,4 +1,5 @@
 #!/bin/bash
+
 cd home
 wget https://archive.apache.org/dist/jena/binaries/apache-jena-fuseki-3.6.0.tar.gz
 cd /opt
@@ -38,3 +39,9 @@ cat skosmos.ttl >> /etc/fuseki/configuration/skosmos.ttl
 rm skosmos.ttl
 /usr/sbin/service fuseki start
 sleep 5
+
+if [ $# -eq 1 ]
+  then
+    cp /home/shiro.ini /etc/fuseki/
+    service fuseki restart
+fi

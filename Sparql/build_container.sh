@@ -38,10 +38,12 @@ fi
 if [[ $platform == 'linux' ]]; then
    echo "Using Linux platform command"
    sudo docker run -itd --network=host --name=$container_name $image_name
+   sudo docker exec -d $container_name ./home/install_sparql.sh
 elif [[ $platform == 'Darwin' ]]; then
    echo "Using Darwin platform command"
    sudo docker run -it -p 3030:3030 -d --name=$container_name $image_name
+   sudo docker exec -d $container_name ./home/install_sparql.sh 1
 fi
 # attach to container with bash
 #sudo docker exec -it $container_name bash
-sudo docker exec -d $container_name ./home/install_sparql.sh
+
