@@ -8,8 +8,8 @@
 # WARNING: BE SURE TO RUN THIS SCRIPT IN THE FOLDER WITH THE
 # SUPPLIED DOCKERFILE!
 
-image_name="skosmos/apache-php:v0.2"
-container_name="skosmos_v0.2"
+image_name="skosmos:v0.4"
+container_name="skosmos0.4"
 
 # remove old container
 echo "removing..."
