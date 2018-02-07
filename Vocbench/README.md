@@ -1,4 +1,4 @@
-# Skosmos
+# Vocbench
 ## Information Dockerfile Skosmos
 
 What we install:
@@ -7,9 +7,7 @@ What we install:
 * cURL
 * unzip
 * wget
-* apache2, php module
-* php and packages
-* locale
+* apache2
 
 > All the needed file get imported or you can find them in this repo.
 
@@ -26,7 +24,7 @@ Because we use phusion/baseimage we can use `/sbin/my_init`. Therefor we let the
 
 ```
 git clone https://github.com/lab9k/Skos
-cd Skos/Skosmos/
+cd Skos/Vocbench/
 ./build_container.sh
 ```
 

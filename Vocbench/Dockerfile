@@ -11,7 +11,6 @@ RUN chmod u+x home/install_vocbench.sh
 RUN apt-get update
 RUN apt-get install -y openjdk-8-jre
 RUN apt-get install -y apache2 
-RUN apt-get install -y libapache2-mod-php7.0
 RUN apt-get install -y unzip
 RUN apt-get install -y nano
 RUN apt-get install -y wget
