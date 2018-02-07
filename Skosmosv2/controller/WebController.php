@@ -286,10 +286,16 @@ class WebController extends Controller
 
     /**
      * Sends the user entered message through the php's mailer.
+     * @param $request
      * @param string $message only required parameter is the actual message.
      * @param string $fromName senders own name.
      * @param string $fromEmail senders email adress.
      * @param string $fromVocab which vocabulary is the feedback related to.
+     * @param null $toMail
+     * @throws Throwable
+     * @throws Twig_Error_Loader
+     * @throws Twig_Error_Runtime
+     * @throws Twig_Error_Syntax
      */
     public function sendFeedback($request, $message, $fromName = null, $fromEmail = null, $fromVocab = null, $toMail = null)
     {

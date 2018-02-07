@@ -19,10 +19,9 @@ try {
     if ($request->getQueryParam('vocab')) {
         $request->setVocab($request->getQueryParam('vocab'));
     }
-
     if (sizeof($parts) < 2 || $parts[1] == "") {
         header("HTTP/1.0 404 Not Found");
-        echo ("404 Not Found");
+        echo("404 Not Found");
     } elseif ($parts[1] == 'vocabularies') {
         $controller->vocabularies($request);
     } elseif ($parts[1] == 'search') {
@@ -40,7 +39,7 @@ try {
         } catch (Exception $e) {
             header("HTTP/1.0 404 Not Found");
             header("Content-type: text/plain; charset=utf-8");
-            echo ("404 Not Found : Vocabulary id '$parts[1]' not found.");
+            echo("404 Not Found : Vocabulary id '$parts[1]' not found.");
             return;
         }
         $lang = $request->getQueryParam('lang') ? $request->getQueryParam('lang') : $request->getVocab()->getConfig()->getDefaultLanguage();
@@ -83,7 +82,7 @@ try {
             $controller->groupMembers($request);
         } else {
             header("HTTP/1.0 404 Not Found");
-            echo ("404 Not Found");
+            echo("404 Not Found");
         }
     }
 } catch (Exception $e) {
