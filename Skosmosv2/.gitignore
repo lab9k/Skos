@@ -1,5 +1,5 @@
-config.inc
-vocabularies.ttl
+#config.inc
+#vocabularies.ttl
 build
 vendor
 report
