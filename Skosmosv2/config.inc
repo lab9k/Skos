@@ -16,7 +16,7 @@ $LANGUAGES = array(
 
 // default SPARQL endpoint
 // a local Fuseki server is usually on localhost:3030
-define("DEFAULT_ENDPOINT", "http://127.0.0.1:3030/skosmos/data");
+define("DEFAULT_ENDPOINT", "http://fuseki:3030/gent/query");
 
 // how many results (maximum) to load at a time on the search results page
 define("SEARCH_RESULTS_SIZE", 20);
@@ -53,7 +53,7 @@ define("SERVICE_NAME", "Skosmos");
 define("CUSTOM_CSS", "resource/css/stylesheet.css");
 
 // Customize the base element. Set this if the automatic base url detection doesn't work. For example setups behind a proxy.
-// define("BASE_HREF", "http://localhost/Skosmos/");
+// define("BASE_HREF", "http://localhost:3030/gent/");
 
 // whether to display the ui language selection as a dropdown (useful for cases where there are more than 3 languages) 
 define("UI_LANGUAGE_DROPDOWN", FALSE);

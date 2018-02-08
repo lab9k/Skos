@@ -9,3 +9,4 @@ apt-get install -y dos2unix
 dos2unix *
 
 ./st_server_run server
+# /home/semanticturkey-2.0/bin/st_server_run server
