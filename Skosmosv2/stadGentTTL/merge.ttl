@@ -1,36 +1,76 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix gentthema: <http://stad.gent/id/ns/themas/> .
+@prefix diensten: <http://stad.gent/id/ns/gpdc/diensten/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/>. 
+<http://stad.gent/id/ns/gpdc/diensten/> a adms:Asset.
 
-@prefix void: <http://rdfs.org/ns/void#> .
-@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix dc: <http://purl.org/dc/terms/> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
-@prefix wv: <http://vocab.org/waiver/terms/norms> .        
-@prefix sd: <http://www.w3.org/ns/sparql-service-description#> .
-@prefix skosmos: <http://purl.org/net/skosmos#> .
-@prefix isothes: <http://purl.org/iso25964/skos-thes#> .
-@prefix mdrtype: <http://publications.europa.eu/resource/authority/dataset-type/> .
-@prefix : <#> .
+@prefix dg: <http://stad.gent/id/ns/gpdc/doelgroepen/> .
+<http://stad.gent/id/ns/gpdc/doelgroepen/> a skos:ConceptScheme;
+                                        skos:prefLabel "Doelgroepen"@nl.
 
-skosmos:Vocabulary, void:Dataset ; 
-    dc:title "Themas Gent Dataset";
-    dc:subject :cat_general ; 
-    dc:type mdrtype:THESAURUS ; 
-    void:uriSpace "http://fuseki/gentdb/";
-    skosmos:groupClass skos:Collection;
-    skosmos:language "en";
-    skosmos:shortName "THEMAS";
-    skosmos:feedbackRecipient "example@example.com" ;
-    skosmos:showChangeList "true" ; 
-    void:sparqlEndpoint <http://fuseki:3030/gentdb/query> ;
-	skosmos:sparqlGraph <http://localhost:3030/gentdb/data> .
+@prefix it: <http://stad.gent/id/ns/gpdc/inputTypes/> .
+@prefix rt: <https://stad.gent/id/ns/gpdc/inputTypes/>.
+<https://stad.gent/id/ns/gpdc/inputTypes/> a skos:ConceptScheme;
+                                        skos:prefLabel "Input types"@nl, "Invoer types"@en.
 
+@prefix rt: <http://stad.gent/id/ns/gpdc/ruleTypes/> .
+<https://stad.gent/id/ns/gpdc/ruleTypes/> a skos:ConceptScheme;
+                                        skos:prefLabel "Regel types"@nl, "Rules types"@en.
+
+
+@prefix gentthema: <http://stad.gent/id/ns/themas/> .
 
 <http://stad.gent/id/ns/themas/> a skos:ConceptScheme; 
                                    skos:prefLabel "Thema's Stad Gent"@nl.
+
+diensten:Europese-overheid a foaf:Agent;
+          foaf:name "Europese overheid".
+
+diensten:Federale-overheid a foaf:Agent;
+          foaf:name "Federale overheid".
+
+diensten:Vlaamse-overheid a foaf:Agent;
+          foaf:name "Vlaamse overheid".
+
+dg:burger a owl:Class;
+          a skos:Concept;
+          skos:inScheme <http://stad.gent/id/ns/gpdc/doelgroepen/>;
+          skos:prefLabel "Burger"@nl.
+dg:onderneming a owl:Class;
+          a skos:Concept;
+          skos:inScheme <http://stad.gent/id/ns/gpdc/doelgroepen/>;
+          skos:prefLabel "Onderneming"@nl.
+dg:vereniging a owl:Class;
+          a skos:Concept;
+          skos:inScheme <http://stad.gent/id/ns/gpdc/doelgroepen/>;
+          skos:prefLabel "Vereniging"@nl.
+dg:stadsmedewerkers a owl:Class;
+          a skos:Concept;
+          skos:inScheme <http://stad.gent/id/ns/gpdc/doelgroepen/>;
+          skos:prefLabel "Stadsmedewerkers"@nl.
+
+rt:Fee a owl:Class, skos:Concept;
+           skos:prefLabel "Fee"@en, "Bedrag"@nl;
+           skos:inScheme <https://stad.gent/id/ns/gpdc/inputTypes/>.
+
+rt:Bring-a-long a owl:Class, skos:Concept;
+           skos:prefLabel "What to bring along"@en, "Wat meebrengen"@nl;
+           skos:inScheme <https://stad.gent/id/ns/gpdc/ruleTypes/>. 
+
+rt:Process a owl:Class, skos:Concept;
+           skos:prefLabel "Process"@en, "Procedure"@nl;
+           skos:inScheme <http://stad.gent/id/ns/gpdc/ruleTypes/>.
+
+rt:Exceptions a owl:Class, skos:Concept;
+           skos:prefLabel "Exceptions"@en, "Uitzonderingen"@nl;
+           skos:inScheme <https://stad.gent/id/ns/gpdc/ruleTypes/>.          
+rt:Preconditions a owl:Class, skos:Concept;
+           skos:prefLabel "Preconditions"@en, "Voorwaarden"@nl;
+           skos:inScheme <https://stad.gent/id/ns/gpdc/ruleTypes/>. 
+
 gentthema:burgerzaken a owl:Class;
                       a skos:Concept;
                       skos:prefLabel "Burgerzaken"@nl;
