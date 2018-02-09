@@ -81,7 +81,8 @@ class GlobalConfig {
      */
     public function getDefaultEndpoint()
     {
-        return $this->getConstant('DEFAULT_ENDPOINT', 'http://localhost:3030/ds/sparql');
+        return ENV["DEFAULT_ENDPOINT"];
+        # return $this->getConstant('DEFAULT_ENDPOINT', 'http://localhost:3030/ds/sparql');
     }
 
     /**
