@@ -13,7 +13,7 @@ services:
     volumes:
       - .:/var/www/html
     ports:
-      - 8000:80
+      - 8888:8888
     depends_on:
       - fuseki
   vocbench:
