@@ -13,45 +13,56 @@
 @prefix mdrtype: <http://publications.europa.eu/resource/authority/dataset-type/> .
 @prefix : <#> .
 
+:ysa a skosmos:Vocabulary, void:Dataset ;
+	dc:title "YSA - Yleinen suomalainen asiasanasto"@fi,
+		"YSA - Allmän tesaurus på finska"@sv,
+		"YSA - General Finnish thesaurus"@en ;
+	dc:subject :cat_general ;
+    dc:type mdrtype:THESAURUS ;
+	void:uriSpace "http://www.yso.fi/onto/ysa/";
+	skosmos:groupClass skos:Collection;
+	skosmos:language "fi";
+	skosmos:shortName "YSA";
+  skosmos:feedbackRecipient "vesa-posti@helsinki.fi" ;
+	skosmos:showChangeList "true" ;
+	void:dataDump <http://api.finto.fi/download/ysa/ysa-skos.ttl> ;
+	void:sparqlEndpoint <http://api.dev.finto.fi/sparql> ;
+	skosmos:sparqlGraph <http://www.yso.fi/onto/ysa/> .
 
-:diensten a skosmos:Vocabulary, void:Dataset ;
-    dc:title "Diensten Thesaurus"@nl, "Service Thesaurus"@en ;
-    skosmos:shortName "Diensten";
-    dc:subject :cat_general ;
-    void:uriSpace "http://fuseki:3030/gentdb";
-    skosmos:language "nl", "en";
-    skosmos:defaultLanguage "nl";
-    skosmos:showTopConcepts true ;
-    skosmos:groupClass isothes:ConceptGroup ;
-    void:sparqlEndpoint <http://fuseki:3030/gentdb/sparql> ;
-    skosmos:sparqlGraph <http://skos.um.es/unescothes/> .
-
-
-:doelgroepen a skosmos:Vocabulary, void:Dataset ;
-    dc:title "Doelgroepen Thesaurus"@nl, "Groups Thesaurus"@en ;
-    skosmos:shortName "Doelgroepen";
-    dc:subject :cat_general ;
-    void:uriSpace "http://fuseki:3030/gentdb";
-    skosmos:language "nl", "en";
-    skosmos:defaultLanguage "nl";
-    skosmos:showTopConcepts true ;
-    skosmos:groupClass isothes:ConceptGroup ;
-    void:sparqlEndpoint <http://fuseki:3030/gentdb/sparql> ;
-    skosmos:sparqlGraph <http://skos.um.es/unescothes/> .
-
+:yso a skosmos:Vocabulary, void:Dataset ;
+	dc:title "YSO - Yleinen suomalainen ontologia"@fi,
+		"ALLFO - Allmän finländsk ontologi"@sv,
+		"YSO - General Finnish ontology"@en ;
+	dc:subject :cat_general ;
+    dc:type mdrtype:ONTOLOGY ;
+	void:uriSpace "http://www.yso.fi/onto/yso/";
+	skosmos:language "fi", "sv", "en";
+	skosmos:defaultLanguage "fi";
+	skosmos:showTopConcepts "true";
+	skosmos:showStatistics "false";
+	skosmos:loadExternalResources "false";
+	skosmos:shortName "YSO",
+                    "ALLFO"@sv;
+	skosmos:groupClass isothes:ConceptGroup ;
+	skosmos:arrayClass isothes:ThesaurusArray ;
+	void:dataDump <http://api.finto.fi/download/yso/yso-skos.ttl> ;
+	void:sparqlEndpoint <http://api.dev.finto.fi/sparql> ;
+	skosmos:sparqlGraph <http://www.yso.fi/onto/yso/> ;
+	skosmos:mainConceptScheme <http://www.yso.fi/onto/yso/> .
 
 :categories a skos:ConceptScheme;
-	skos:prefLabel "Skosmos Vocabulary Categories"@en, "Iets in het nederlands"@nl .
+	skos:prefLabel "Skosmos Vocabulary Categories"@en .
 
 :cat_general a skos:Concept ;
 	skos:topConceptOf :categories ;
 	skos:inScheme :categories ;
-	skos:prefLabel "Algemeen"@nl, 
+	skos:prefLabel "Yleiskäsitteet"@fi, 
+		"Allmänna begrepp"@sv,
 		"General concepts"@en .
 
 mdrtype:THESAURUS a skos:Concept ;
-	skos:prefLabel "thesaurus"@nl, "Thesaurus"@en .
+	skos:prefLabel "Тезаурус"@bg, "Tezaurus"@cs, "Tesaurus"@da, "Thesaurus"@de, "Θησαυρός"@el, "Thesaurus"@en, "Tesaurus"@et, "Tesaurus"@fi, "Thésaurus"@fr, "Pojmovnik"@hr, "Tezaurusz"@hu, "Tesauro"@it, "Tēzaurs"@lv, "Tezauras"@lt, "Teżawru"@mt, "Thesaurus"@nl, "Tesaurus"@no, "Tezaurus"@pl, "Tesauro"@pt, "Tezaur"@ro, "Synonymický slovník"@sk, "Tezaver"@sl, "Tesauro"@es, "Tesaurus"@sv .
 
 mdrtype:ONTOLOGY a skos:Concept ;
-    	skos:prefLabel "Ontologie"@nl, "Ontology"@en .
+    skos:prefLabel "Онтология"@bg, "Ontologie"@cs, "Ontologi"@da, "Ontologie"@de, "Οντολογία"@el, "Ontology"@en, "Ontoloogia"@et, "Ontologia"@fi, "Ontologie"@fr, "Ontologija"@hr, "Ontológia"@hu, "Ontologia"@it, "Ontoloģija"@lv, "Ontologija"@lt, "Ontoloġija"@mt, "Ontologie"@nl, "Ontologi"@no, "Struktura pojęciowa"@pl, "Ontologia"@pt, "Ontologie"@ro, "Ontológia"@sk, "Ontologija"@sl, "Ontología"@es, "Ontologi"@sv .
 
