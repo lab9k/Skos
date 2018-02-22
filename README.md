@@ -2,6 +2,9 @@
 Simple Knowledge Organization System
 
 ## Deployment
+If you want to know more about how openshift works read [this](https://github.com/lab9k/Orga/blob/master/Application%20deployment%20Openshift/How_to_use_Openshift.md)
+ HOW TO manual. 
+
 Deploy Skosmos on openshift: 
 
 ```
