@@ -17,7 +17,7 @@ Deploy Sparql on openshift:
 oc new-app registry.access.redhat.com/redhat-openjdk-18/openjdk18-openshift~https://github.com/lab9k/Skos.git --context-dir=Sparql --name=sparql
 ```
 
-Deploy Vocbench on apache2:
+Deploy Vocbench on apache:
 
 ```
 to do: commands to deploy vocbench on digitalocean server 
