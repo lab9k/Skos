@@ -1,27 +1,13 @@
 version: '3'
 
 services:
-  fuseki:
-    image: stain/jena-fuseki
-    environment:
-      - ADMIN_PASSWORD=admin
-      - JVM_ARGS=-Xmx2g
-    ports:
-     - 3030:3030
   web:
     build: .
     volumes:
       - .:/var/www/html
     ports:
       - 8000:80
-    depends_on:
-      - fuseki
-  vocbench:
-    build: ../Vocbench
-    ports:
-      - 1979:1979
-    command: sh /home/install_vocbench.sh
-
+    env_file: ./.env
 # once the environment has been created:
 # 1. create dataset
 # >curl -I -u admin:admin -XPOST --data "dbName=skosmos&dbType=tdb" -G http://localhost:3030/$/datasets/
