@@ -3,7 +3,7 @@
 {% block headernav %}{% endblock %}
 {% block content %}
 <div class="about-logo">
-  <h1>{% trans "About" %}</h1>
+  <h1 class="about">{% trans "About" %}</h1>
 </div>
 <div id="about">
   <div class="about-content">
@@ -11,9 +11,11 @@
   </div>
 </div>
 <div class="credits">
-  <p>{% if ServiceName != 'SERVICE_NAME' %}{{ ServiceName }}{% else %}Skosmos{% endif %} {% trans "layout designed by Hahmo" %}</p>
+  <p>{% if 'SERVICE_NAME' %} <strong>Gent Skosmos</strong> {% else %}Skosmos{% endif %} 
+    {% trans "layout designed by <em>Ismail Kutlu</em>" %}
+  </p>
 </div>
 <div class="version">
-  <p>{% trans %}Skosmos version {{ version }}{% endtrans %}</p>
+  <p>{% trans %} <strong>Skosmos version:</strong> {{ version }}{% endtrans %}</p>
 </div>
 {% endblock %}
