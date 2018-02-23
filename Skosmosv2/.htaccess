@@ -20,6 +20,7 @@ RewriteRule ^favicon.ico$ custom-favicon.ico [L]
 
 # TODO: RewriteRule ^/myvocab/(.*) http://example.org/skosmos/entity?uri=http://id.example.org/myvocab/$0 [P]
 
+
 <Files ~ "\.ttl$">
     <IfModule mod_authz_core.c> 
         # Apache 2.4 
