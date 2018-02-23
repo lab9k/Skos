@@ -15,7 +15,7 @@ $LANGUAGES = array(
 
 // default SPARQL endpoint
 // a local Fuseki server is usually on localhost:3030
-define("DEFAULT_ENDPOINT", "http://sparql-skosmos.e4ff.pro-eu-west-1.openshiftapps.com");
+define("DEFAULT_ENDPOINT", "https://sparql.lab9k.gent/test123/data");
 
 // how many results (maximum) to load at a time on the search results page
 define("SEARCH_RESULTS_SIZE", 20);
@@ -55,7 +55,7 @@ define("CUSTOM_CSS", "resource/css/stylesheet.css");
 // define("BASE_HREF", "http://localhost:3030/gent/");
 
 // whether to display the ui language selection as a dropdown (useful for cases where there are more than 3 languages) 
-define("UI_LANGUAGE_DROPDOWN", FALSE);
+define("UI_LANGUAGE_DROPDOWN", TRUE);
 
 // whether to enable the spam honey pot or not, enabled by default
 define("UI_HONEYPOT_ENABLED", TRUE);
