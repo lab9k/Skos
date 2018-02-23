@@ -1,0 +1,594 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Skosmos\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-02-07 17:27+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Ismail Kutlu <ismail.kutlu@gmail.com>\n"
+"Language-Team: Lab9K Team<hans.fraiponts@digipolis.be>\n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Basepath: ../..\n"
+"X-Generator: Poedit 2.0.6\n"
+"X-Poedit-SearchPath-0: view\n"
+"X-Poedit-SearchPath-1: controller\n"
+"X-Poedit-SearchPath-2: model\n"
+
+#: controller/Controller.php:38
+msgid "in_this_language"
+msgstr "Content taal"
+
+#: controller/RestController.php:271
+msgid "skos:Concept"
+msgstr "Concept"
+
+#: controller/RestController.php:280
+msgid "skos:Collection"
+msgstr "Collectie"
+
+#: model/Concept.php:664 model/Concept.php:684
+msgid "skosmos:created"
+msgstr "Gemaakt"
+
+#: model/Concept.php:669 model/Concept.php:671 model/Concept.php:680
+msgid "skosmos:modified"
+msgstr "laatst gewijzigd"
+
+#: model/VocabularyCategory.php:39
+msgid "Vocabularies"
+msgstr "Woordenlijst"
+
+#~ msgid "%search_count% results for '%term%'"
+#~ msgstr "%search_count% results for '%term%'"
+
+#~ msgid "404 Error: The page %requested_page% cannot be found."
+#~ msgstr "404 Error: De pagina %requested_page% kan niet gevonden worden."
+
+#~ msgid "A-Z"
+#~ msgstr "A-Z"
+
+#~ msgid "About"
+#~ msgstr "Over"
+
+#~ msgid "All %d results displayed"
+#~ msgstr "Alle %d resultaten worden getoond"
+
+#~ msgid "Alpha-nav"
+#~ msgstr "Alphabetical"
+
+#~ msgid "Alphabetical index"
+#~ msgstr "Alphabetisch index"
+
+#~ msgid "By group"
+#~ msgstr "Per groep"
+
+#~ msgid "By parent"
+#~ msgstr "Per parent"
+
+#~ msgid "By scheme"
+#~ msgstr "Per subvocabulair"
+
+#~ msgid "By type"
+#~ msgstr "Per type"
+
+#~ msgid "Changes-nav"
+#~ msgstr "New"
+
+#~ msgid "Clear limitations"
+#~ msgstr "Wis limiten"
+
+#~ msgid "Contact us!"
+#~ msgstr "Contacteer ons!"
+
+#~ msgid "Content and search language"
+#~ msgstr "Content and search language"
+
+#~ msgid "Content language"
+#~ msgstr "Content language"
+
+#~ msgid "Download this concept in SKOS format:"
+#~ msgstr "Download this concept:"
+
+#~ msgid "E-mail:"
+#~ msgstr "E-mail:"
+
+#~ msgid "Enter search term"
+#~ msgstr "Enter search term"
+
+#~ msgid "Enter your e-mail address"
+#~ msgstr "Enter your e-mail address"
+
+#~ msgid "Enter your name"
+#~ msgstr "Enter your name"
+
+#~ msgid "Error: Requested vocabulary not found!"
+#~ msgstr "Error: Requested vocabulary not found!"
+
+#~ msgid "Error: Term \"%term%\" not found in vocabulary!"
+#~ msgstr "Error: Term \"%term%\" not found in vocabulary!"
+
+#~ msgid "Feedback"
+#~ msgstr "Feedback"
+
+#~ msgid "Feedback has been sent!"
+#~ msgstr "Feedback has been sent!"
+
+#~ msgid "Group index"
+#~ msgstr "Group index"
+
+#~ msgid "Group-nav"
+#~ msgstr "Groups"
+
+#~ msgid "Hier-nav"
+#~ msgstr "Hierarchy"
+
+#~ msgid "Leave this field blank"
+#~ msgstr "Leave this field blank"
+
+#~ msgid "Limit search"
+#~ msgstr "Limit search"
+
+#~ msgid "Loading"
+#~ msgstr "Loading"
+
+#~ msgid "Loading more items"
+#~ msgstr "Loading more items"
+
+#~ msgid "Message:"
+#~ msgstr "Message:"
+
+#~ msgid "Name:"
+#~ msgstr "Name:"
+
+#~ msgid "No results"
+#~ msgstr "No results"
+
+#~ msgid "Not to a specific vocabulary"
+#~ msgstr "Not to a specific vocabulary"
+
+#~ msgid "Search"
+#~ msgstr "Search"
+
+#~ msgid "Search from vocabulary"
+#~ msgstr "Search from vocabulary"
+
+#~ msgid "Search language: any"
+#~ msgstr "Any language"
+
+#~ msgid "Search options"
+#~ msgstr "Search options"
+
+#~ msgid "Send feedback"
+#~ msgstr "Send feedback"
+
+#~ msgid "Show all breadcrumb paths"
+#~ msgstr "show all # paths"
+
+#~ msgid "Skosmos version %version%"
+#~ msgstr "Skosmos version %version%"
+
+#~ msgid "Submit search"
+#~ msgstr "Submit search"
+
+#~ msgid "Thank you for your feedback"
+#~ msgstr "Thank you for your feedback. We strive to answer all feedback as soon as possible."
+
+#~ msgid "The search provided no results."
+#~ msgstr "The search provided no results."
+
+#~ msgid "There is no term for this concept in this language"
+#~ msgstr "There is no term for this concept in this language."
+
+#~ msgid "Value is required and can not be empty"
+#~ msgstr "Value is required and can not be empty"
+
+#~ msgid "cc:attributionName"
+#~ msgstr "Attribution Name"
+
+#~ msgid "cc:attributionUrl"
+#~ msgstr "Attribution Url"
+
+#~ msgid "cc:license"
+#~ msgstr "License"
+
+#~ msgid "cc:morePermissions"
+#~ msgstr "More Permissions"
+
+#~ msgid "cc:useGuidelines"
+#~ msgstr "use guidelines"
+
+#~ msgid "dc:conformsTo"
+#~ msgstr "Conforms To"
+
+#~ msgid "dc:contributor"
+#~ msgstr "Contributor"
+
+#~ msgid "dc:coverage"
+#~ msgstr "Coverage"
+
+#~ msgid "dc:created"
+#~ msgstr "Created"
+
+#~ msgid "dc:creator"
+#~ msgstr "Creator"
+
+#~ msgid "dc:date"
+#~ msgstr "Date"
+
+#~ msgid "dc:description"
+#~ msgstr "Description"
+
+#~ msgid "dc:format"
+#~ msgstr "Format"
+
+#~ msgid "dc:identifier"
+#~ msgstr "Identifier"
+
+#~ msgid "dc:isReplacedBy"
+#~ msgstr "Is replaced by"
+
+#~ msgid "dc:isRequiredBy"
+#~ msgstr "Is Required By"
+
+#~ msgid "dc:issued"
+#~ msgstr "Date issued"
+
+#~ msgid "dc:language"
+#~ msgstr "Language"
+
+#~ msgid "dc:license"
+#~ msgstr "License"
+
+#~ msgid "dc:modified"
+#~ msgstr "Last modified"
+
+#~ msgid "dc:publisher"
+#~ msgstr "Publisher"
+
+#~ msgid "dc:relation"
+#~ msgstr "Relation"
+
+#~ msgid "dc:replaces"
+#~ msgstr "Replaces"
+
+#~ msgid "dc:rights"
+#~ msgstr "Rights"
+
+#~ msgid "dc:rightsHolder"
+#~ msgstr "Rights Holder"
+
+#~ msgid "dc:source"
+#~ msgstr "Source"
+
+#~ msgid "dc:source_help"
+#~ msgstr "Source for the description of the concept."
+
+#~ msgid "dc:spatial"
+#~ msgstr "Spatial coverage"
+
+#~ msgid "dc:subject"
+#~ msgstr "Subject"
+
+#~ msgid "dc:temporal"
+#~ msgstr "Temporal coverage"
+
+#~ msgid "dc:title"
+#~ msgstr "Title"
+
+#~ msgid "dc:type"
+#~ msgstr "Type"
+
+#~ msgid "deprecated"
+#~ msgstr "This concept has been deprecated. Do not use this concept for annotation!"
+
+#~ msgid "foaf:homepage"
+#~ msgstr "Homepage"
+
+#~ msgid "foaf:page"
+#~ msgstr "Page"
+
+#~ msgid "foreign prefLabel help"
+#~ msgstr "Terms for the concept in other languages."
+
+#~ msgid "foreign prefLabels"
+#~ msgstr "In other languages"
+
+#~ msgid "from all"
+#~ msgstr "from all"
+
+#~ msgid "hierarchy-disabled-help"
+#~ msgstr "The top level hierarchy can't be shown in this vocabulary."
+
+#~ msgid "isothes:ConceptGroup"
+#~ msgstr "Concept group"
+
+#~ msgid "isothes:ThesaurusArray"
+#~ msgstr "Array of sibling concepts"
+
+#~ msgid "isothes:broaderGeneric"
+#~ msgstr "Broader concepts"
+
+#~ msgid "isothes:broaderInstantial"
+#~ msgstr "Broader concept (instantial)"
+
+#~ msgid "isothes:broaderPartitive"
+#~ msgstr "Broader concept (partitive)"
+
+#~ msgid "isothes:narrowerGeneric"
+#~ msgstr "Narrower concepts"
+
+#~ msgid "isothes:narrowerInstantial"
+#~ msgstr "Narrower concepts (instantial)"
+
+#~ msgid "isothes:narrowerPartitive"
+#~ msgstr "Narrower concepts (partitive)"
+
+#~ msgid "isothes:superGroup"
+#~ msgstr "Super group"
+
+#~ msgid "layout designed by Hahmo"
+#~ msgstr "layout designed by Hahmo Design"
+
+#~ msgid "limited to group"
+#~ msgstr "group"
+
+#~ msgid "limited to parent"
+#~ msgstr "parent"
+
+#~ msgid "limited to scheme"
+#~ msgstr "limited to scheme"
+
+#~ msgid "limited to type"
+#~ msgstr "type"
+
+#~ msgid "owl:sameAs"
+#~ msgstr "Equivalent concepts"
+
+#~ msgid "owl:versionInfo"
+#~ msgstr "Version"
+
+#~ msgid "rdf:type"
+#~ msgstr "Type"
+
+#~ msgid "rdf:type_help"
+#~ msgstr "Type of entity"
+
+#~ msgid "rdfs:comment"
+#~ msgstr "Description"
+
+#~ msgid "rdfs:label"
+#~ msgstr "Label"
+
+#~ msgid "rdfs:seeAlso"
+#~ msgstr "See also"
+
+#~ msgid "selected"
+#~ msgstr "selected"
+
+#~ msgid "skos:altLabel"
+#~ msgstr "Entry terms"
+
+#~ msgid "skos:altLabel_help"
+#~ msgstr "Alternative terms for the concept."
+
+#~ msgid "skos:broadMatch"
+#~ msgstr "Broader matching concepts"
+
+#~ msgid "skos:broadMatch_help"
+#~ msgstr "Broader matching concepts in another vocabulary."
+
+#~ msgid "skos:broader"
+#~ msgstr "Broader concept"
+
+#~ msgid "skos:broader_help"
+#~ msgstr "Broader concept"
+
+#~ msgid "skos:changeNote"
+#~ msgstr "Change note"
+
+#~ msgid "skos:closeMatch"
+#~ msgstr "Closely matching concepts"
+
+#~ msgid "skos:closeMatch_help"
+#~ msgstr "Closely matching concepts in another vocabulary."
+
+#~ msgid "skos:definition"
+#~ msgstr "Definition"
+
+#~ msgid "skos:definition_help"
+#~ msgstr "A complete explanation of the intended meaning of a concept"
+
+#~ msgid "skos:editorialNote"
+#~ msgstr "Editorial note"
+
+#~ msgid "skos:exactMatch"
+#~ msgstr "Exactly matching concepts"
+
+#~ msgid "skos:exactMatch_help"
+#~ msgstr "Exactly matching concepts in another vocabulary."
+
+#~ msgid "skos:example"
+#~ msgstr "Example"
+
+#~ msgid "skos:hasTopConcept"
+#~ msgstr "Has top concept"
+
+#~ msgid "skos:historyNote"
+#~ msgstr "History note"
+
+#~ msgid "skos:inScheme"
+#~ msgstr "Concept scheme"
+
+#~ msgid "skos:member"
+#~ msgstr "Group members"
+
+#~ msgid "skos:member_help"
+#~ msgstr "Members of the group"
+
+#~ msgid "skos:narrowMatch"
+#~ msgstr "Narrower matching concepts"
+
+#~ msgid "skos:narrowMatch_help"
+#~ msgstr "Narrower matching concepts in another vocabulary."
+
+#~ msgid "skos:narrower"
+#~ msgstr "Narrower concepts"
+
+#~ msgid "skos:narrower_help"
+#~ msgstr "Narrower concepts."
+
+#~ msgid "skos:note"
+#~ msgstr "Note"
+
+#~ msgid "skos:note_help"
+#~ msgstr "Notes"
+
+#~ msgid "skos:prefLabel"
+#~ msgstr "Preferred term"
+
+#~ msgid "skos:related"
+#~ msgstr "Related concepts"
+
+#~ msgid "skos:relatedMatch"
+#~ msgstr "Related matching concepts"
+
+#~ msgid "skos:related_help"
+#~ msgstr "Concepts related to this concept."
+
+#~ msgid "skos:scopeNote"
+#~ msgstr "Scope note"
+
+#~ msgid "skos:scopeNote_help"
+#~ msgstr "Notes about the usage and scope of the concept."
+
+#~ msgid "skos:topConceptOf"
+#~ msgstr "Belongs to vocabulary"
+
+#~ msgid "skosext:DeprecatedConcept"
+#~ msgstr "Deprecated concept"
+
+#~ msgid "skosext:partOf"
+#~ msgstr "Is part of"
+
+#~ msgid "skosext:partOf_help"
+#~ msgstr "Whole which the concept is a part of."
+
+#~ msgid "skosmos:memberOf"
+#~ msgstr "Belongs to group"
+
+#~ msgid "skosmos:memberOfArray"
+#~ msgstr "Belongs to array"
+
+#~ msgid "skosmos:memberOfArray_help"
+#~ msgstr "Array which the concept belongs to."
+
+#~ msgid "skosmos:memberOf_help"
+#~ msgstr "Group which the concept belongs to."
+
+#~ msgid "zxx-x-taxon"
+#~ msgstr "Scientific name"
+
+msgid "About page"
+msgstr "Over"
+
+#~ msgid "Alternate terms"
+#~ msgstr "Alternate terms"
+
+#~ msgid "Concept language"
+#~ msgstr "Language"
+
+#~ msgid "Count"
+#~ msgstr "Count"
+
+#~ msgid "Download this vocabulary as SKOS/RDF:"
+#~ msgstr "Download this vocabulary as SKOS/RDF:"
+
+#~ msgid "Help"
+#~ msgstr "Help"
+
+#~ msgid "Hidden terms"
+#~ msgstr "Hidden terms"
+
+#~ msgid "Interface language"
+#~ msgstr "Interface language"
+
+#~ msgid "No vocabularies on the server!"
+#~ msgstr "No vocabularies on the server!"
+
+#~ msgid "Preferred terms"
+#~ msgstr "Preferred terms"
+
+#~ msgid "Resource counts by type"
+#~ msgstr "Resource counts by type"
+
+#~ msgid "Term counts by language"
+#~ msgstr "Term counts by language"
+
+#~ msgid "Type"
+#~ msgstr "Type"
+
+#~ msgid "Vocabularies-nav"
+#~ msgstr "Vocabularies"
+
+#~ msgid "Vocabulary information"
+#~ msgstr "Vocabulary information"
+
+#~ msgid "helper_help"
+#~ msgstr "Hover your cursor over the text with a dotted underline to see instructions about the property."
+
+#~ msgid "search_example_text"
+#~ msgstr "For truncation search, please use the symbol * as in *animal or *patent*. For ends of search words, the search will be truncated automatically, even if the truncation symbol is not entered manually: thus, cat will yield the same results as cat*."
+
+#~ msgid "dc11:contributor"
+#~ msgstr "Contributor"
+
+#~ msgid "dc11:creator"
+#~ msgstr "Creator"
+
+#~ msgid "dc11:description"
+#~ msgstr "Description"
+
+#~ msgid "dc11:license"
+#~ msgstr "License"
+
+#~ msgid "dc11:publisher"
+#~ msgstr "Publisher"
+
+#~ msgid "dc11:relation"
+#~ msgstr "Relation"
+
+#~ msgid "dc11:rights"
+#~ msgstr "Rights"
+
+#~ msgid "dc11:source"
+#~ msgstr "Source"
+
+#~ msgid "dc11:title"
+#~ msgstr "Title"
+
+#~ msgid "Error: the vocabulary does not contain terms beginning with"
+#~ msgstr "The vocabulary does not contain terms beginning with"
+
+#~ msgid "Vocabularies on the server"
+#~ msgstr "Available vocabularies and ontologies"
+
+#~ msgid "Modified concepts"
+#~ msgstr "Modified concepts"
+
+#~ msgid "New concepts"
+#~ msgstr "New concepts"
+
+#~ msgid "All"
+#~ msgstr "All"
+
+#~ msgid "results"
+#~ msgstr "results:"
+
+#~ msgid "results for"
+#~ msgstr "results for"
+
+#~ msgid "Language literal"
+#~ msgstr "In English"

@@ -1,0 +1,346 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="urn:default:baseUri:#"
+     xml:base="urn:default:baseUri:"
+     xmlns:skosmos="http://purl.org/net/skosmos#"
+     xmlns:void="http://rdfs.org/ns/void#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:sd="http://www.w3.org/ns/sparql-service-description#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:isothes="http://purl.org/iso25964/skos-thes#"
+     xmlns:mdrtype="http://publications.europa.eu/resource/authority/dataset-type/"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:dc="http://purl.org/dc/terms/"
+     xmlns:wv="http://vocab.org/waiver/terms/norms">
+    <owl:Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/terms/subject -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/subject"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/type -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/type"/>
+    
+
+
+    <!-- http://purl.org/net/skosmos#arrayClass -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/net/skosmos#arrayClass"/>
+    
+
+
+    <!-- http://purl.org/net/skosmos#defaultLanguage -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/net/skosmos#defaultLanguage"/>
+    
+
+
+    <!-- http://purl.org/net/skosmos#feedbackRecipient -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/net/skosmos#feedbackRecipient"/>
+    
+
+
+    <!-- http://purl.org/net/skosmos#groupClass -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/net/skosmos#groupClass"/>
+    
+
+
+    <!-- http://purl.org/net/skosmos#language -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/net/skosmos#language"/>
+    
+
+
+    <!-- http://purl.org/net/skosmos#loadExternalResources -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/net/skosmos#loadExternalResources"/>
+    
+
+
+    <!-- http://purl.org/net/skosmos#mainConceptScheme -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/net/skosmos#mainConceptScheme"/>
+    
+
+
+    <!-- http://purl.org/net/skosmos#shortName -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/net/skosmos#shortName"/>
+    
+
+
+    <!-- http://purl.org/net/skosmos#showChangeList -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/net/skosmos#showChangeList"/>
+    
+
+
+    <!-- http://purl.org/net/skosmos#showStatistics -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/net/skosmos#showStatistics"/>
+    
+
+
+    <!-- http://purl.org/net/skosmos#showTopConcepts -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/net/skosmos#showTopConcepts"/>
+    
+
+
+    <!-- http://purl.org/net/skosmos#sparqlGraph -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/net/skosmos#sparqlGraph"/>
+    
+
+
+    <!-- http://rdfs.org/ns/void#dataDump -->
+
+    <owl:AnnotationProperty rdf:about="http://rdfs.org/ns/void#dataDump"/>
+    
+
+
+    <!-- http://rdfs.org/ns/void#sparqlEndpoint -->
+
+    <owl:AnnotationProperty rdf:about="http://rdfs.org/ns/void#sparqlEndpoint"/>
+    
+
+
+    <!-- http://rdfs.org/ns/void#uriSpace -->
+
+    <owl:AnnotationProperty rdf:about="http://rdfs.org/ns/void#uriSpace"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#inScheme -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#inScheme"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#prefLabel -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#prefLabel"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#topConceptOf -->
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2004/02/skos/core#topConceptOf"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/net/skosmos#Vocabulary -->
+
+    <owl:Class rdf:about="http://purl.org/net/skosmos#Vocabulary"/>
+    
+
+
+    <!-- http://rdfs.org/ns/void#Dataset -->
+
+    <owl:Class rdf:about="http://rdfs.org/ns/void#Dataset"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#Concept -->
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#Concept"/>
+    
+
+
+    <!-- http://www.w3.org/2004/02/skos/core#ConceptScheme -->
+
+    <owl:Class rdf:about="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://publications.europa.eu/resource/authority/dataset-type/ONTOLOGY -->
+
+    <owl:NamedIndividual rdf:about="http://publications.europa.eu/resource/authority/dataset-type/ONTOLOGY">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="da">Ontologi</skos:prefLabel>
+        <skos:prefLabel xml:lang="no">Ontologi</skos:prefLabel>
+        <skos:prefLabel xml:lang="sv">Ontologi</skos:prefLabel>
+        <skos:prefLabel xml:lang="fi">Ontologia</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Ontologia</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">Ontologia</skos:prefLabel>
+        <skos:prefLabel xml:lang="cs">Ontologie</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Ontologie</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Ontologie</skos:prefLabel>
+        <skos:prefLabel xml:lang="nl">Ontologie</skos:prefLabel>
+        <skos:prefLabel xml:lang="ro">Ontologie</skos:prefLabel>
+        <skos:prefLabel xml:lang="hr">Ontologija</skos:prefLabel>
+        <skos:prefLabel xml:lang="lt">Ontologija</skos:prefLabel>
+        <skos:prefLabel xml:lang="sl">Ontologija</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Ontology</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">Ontología</skos:prefLabel>
+        <skos:prefLabel xml:lang="et">Ontoloogia</skos:prefLabel>
+        <skos:prefLabel xml:lang="mt">Ontoloġija</skos:prefLabel>
+        <skos:prefLabel xml:lang="lv">Ontoloģija</skos:prefLabel>
+        <skos:prefLabel xml:lang="hu">Ontológia</skos:prefLabel>
+        <skos:prefLabel xml:lang="sk">Ontológia</skos:prefLabel>
+        <skos:prefLabel xml:lang="pl">Struktura pojęciowa</skos:prefLabel>
+        <skos:prefLabel xml:lang="el">Οντολογία</skos:prefLabel>
+        <skos:prefLabel xml:lang="bg">Онтология</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://publications.europa.eu/resource/authority/dataset-type/THESAURUS -->
+
+    <owl:NamedIndividual rdf:about="http://publications.europa.eu/resource/authority/dataset-type/THESAURUS">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:prefLabel xml:lang="hr">Pojmovnik</skos:prefLabel>
+        <skos:prefLabel xml:lang="sk">Synonymický slovník</skos:prefLabel>
+        <skos:prefLabel xml:lang="es">Tesauro</skos:prefLabel>
+        <skos:prefLabel xml:lang="it">Tesauro</skos:prefLabel>
+        <skos:prefLabel xml:lang="pt">Tesauro</skos:prefLabel>
+        <skos:prefLabel xml:lang="da">Tesaurus</skos:prefLabel>
+        <skos:prefLabel xml:lang="et">Tesaurus</skos:prefLabel>
+        <skos:prefLabel xml:lang="fi">Tesaurus</skos:prefLabel>
+        <skos:prefLabel xml:lang="no">Tesaurus</skos:prefLabel>
+        <skos:prefLabel xml:lang="sv">Tesaurus</skos:prefLabel>
+        <skos:prefLabel xml:lang="ro">Tezaur</skos:prefLabel>
+        <skos:prefLabel xml:lang="lt">Tezauras</skos:prefLabel>
+        <skos:prefLabel xml:lang="cs">Tezaurus</skos:prefLabel>
+        <skos:prefLabel xml:lang="pl">Tezaurus</skos:prefLabel>
+        <skos:prefLabel xml:lang="hu">Tezaurusz</skos:prefLabel>
+        <skos:prefLabel xml:lang="sl">Tezaver</skos:prefLabel>
+        <skos:prefLabel xml:lang="mt">Teżawru</skos:prefLabel>
+        <skos:prefLabel xml:lang="de">Thesaurus</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">Thesaurus</skos:prefLabel>
+        <skos:prefLabel xml:lang="nl">Thesaurus</skos:prefLabel>
+        <skos:prefLabel xml:lang="fr">Thésaurus</skos:prefLabel>
+        <skos:prefLabel xml:lang="lv">Tēzaurs</skos:prefLabel>
+        <skos:prefLabel xml:lang="el">Θησαυρός</skos:prefLabel>
+        <skos:prefLabel xml:lang="bg">Тезаурус</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:default:baseUri:#cat_general -->
+
+    <owl:NamedIndividual rdf:about="urn:default:baseUri:#cat_general">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+        <skos:inScheme rdf:resource="urn:default:baseUri:#categories"/>
+        <skos:prefLabel xml:lang="sv">Allmänna begrepp</skos:prefLabel>
+        <skos:prefLabel xml:lang="en">General concepts</skos:prefLabel>
+        <skos:prefLabel xml:lang="fi">Yleiskäsitteet</skos:prefLabel>
+        <skos:topConceptOf rdf:resource="urn:default:baseUri:#categories"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:default:baseUri:#categories -->
+
+    <owl:NamedIndividual rdf:about="urn:default:baseUri:#categories">
+        <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#ConceptScheme"/>
+        <skos:prefLabel xml:lang="en">Skosmos Vocabulary Categories</skos:prefLabel>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:default:baseUri:#ysa -->
+
+    <owl:NamedIndividual rdf:about="urn:default:baseUri:#ysa">
+        <rdf:type rdf:resource="http://purl.org/net/skosmos#Vocabulary"/>
+        <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+        <dc:subject rdf:resource="urn:default:baseUri:#cat_general"/>
+        <dc:title xml:lang="sv">YSA - Allmän tesaurus på finska</dc:title>
+        <dc:title xml:lang="en">YSA - General Finnish thesaurus</dc:title>
+        <dc:title xml:lang="fi">YSA - Yleinen suomalainen asiasanasto</dc:title>
+        <dc:type rdf:resource="http://publications.europa.eu/resource/authority/dataset-type/THESAURUS"/>
+        <skosmos:feedbackRecipient>vesa-posti@helsinki.fi</skosmos:feedbackRecipient>
+        <skosmos:groupClass rdf:resource="http://www.w3.org/2004/02/skos/core#Collection"/>
+        <skosmos:language>fi</skosmos:language>
+        <skosmos:shortName>YSA</skosmos:shortName>
+        <skosmos:showChangeList>true</skosmos:showChangeList>
+        <skosmos:sparqlGraph rdf:resource="http://www.yso.fi/onto/ysa/"/>
+        <void:dataDump rdf:resource="http://api.finto.fi/download/ysa/ysa-skos.ttl"/>
+        <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+        <void:uriSpace>http://www.yso.fi/onto/ysa/</void:uriSpace>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- urn:default:baseUri:#yso -->
+
+    <owl:NamedIndividual rdf:about="urn:default:baseUri:#yso">
+        <rdf:type rdf:resource="http://purl.org/net/skosmos#Vocabulary"/>
+        <rdf:type rdf:resource="http://rdfs.org/ns/void#Dataset"/>
+        <dc:subject rdf:resource="urn:default:baseUri:#cat_general"/>
+        <dc:title xml:lang="sv">ALLFO - Allmän finländsk ontologi</dc:title>
+        <dc:title xml:lang="en">YSO - General Finnish ontology</dc:title>
+        <dc:title xml:lang="fi">YSO - Yleinen suomalainen ontologia</dc:title>
+        <dc:type rdf:resource="http://publications.europa.eu/resource/authority/dataset-type/ONTOLOGY"/>
+        <skosmos:arrayClass rdf:resource="http://purl.org/iso25964/skos-thes#ThesaurusArray"/>
+        <skosmos:defaultLanguage>fi</skosmos:defaultLanguage>
+        <skosmos:groupClass rdf:resource="http://purl.org/iso25964/skos-thes#ConceptGroup"/>
+        <skosmos:language>en</skosmos:language>
+        <skosmos:language>fi</skosmos:language>
+        <skosmos:language>sv</skosmos:language>
+        <skosmos:loadExternalResources>false</skosmos:loadExternalResources>
+        <skosmos:mainConceptScheme rdf:resource="http://www.yso.fi/onto/yso/"/>
+        <skosmos:shortName xml:lang="sv">ALLFO</skosmos:shortName>
+        <skosmos:shortName>YSO</skosmos:shortName>
+        <skosmos:showStatistics>false</skosmos:showStatistics>
+        <skosmos:showTopConcepts>true</skosmos:showTopConcepts>
+        <skosmos:sparqlGraph rdf:resource="http://www.yso.fi/onto/yso/"/>
+        <void:dataDump rdf:resource="http://api.finto.fi/download/yso/yso-skos.ttl"/>
+        <void:sparqlEndpoint rdf:resource="http://api.dev.finto.fi/sparql"/>
+        <void:uriSpace>http://www.yso.fi/onto/yso/</void:uriSpace>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
