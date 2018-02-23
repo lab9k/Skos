@@ -84,7 +84,7 @@ class GlobalConfig {
         //$endpoint = getenv("DEFAULT_ENDPOINT");
         //echo $endpoint;
         //return $endpoint;
-        return $this->getConstant('DEFAULT_ENDPOINT', 'https://sparql.lab9k.gent/');
+        return $this->getConstant('DEFAULT_ENDPOINT', 'https://sparql.lab9k.gent/test123/data');
     }
 
     /**

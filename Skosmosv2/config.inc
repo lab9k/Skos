@@ -15,7 +15,7 @@ $LANGUAGES = array(
 
 // default SPARQL endpoint
 // a local Fuseki server is usually on localhost:3030
-define("DEFAULT_ENDPOINT", "https://sparql.lab9k.gent/");
+define("DEFAULT_ENDPOINT", "https://sparql.lab9k.gent/test123/data");
 
 // how many results (maximum) to load at a time on the search results page
 define("SEARCH_RESULTS_SIZE", 20);
