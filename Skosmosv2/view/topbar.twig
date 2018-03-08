@@ -18,7 +18,7 @@
 				<a id="language-{{langcode}}" class="navigation-font" href="{{ request.langurl|replace({("/#{request.lang}/"): "/#{langcode}/"}) }}"> {{langdata.lemma}}</a>
 			{% endif %}
 			{% if request.lang == langcode %}
-				<a class="active" id="language-{{langcode}}" class="navigation-font" href="{{ request.langurl|replace({("#{request.lang}/"): "#{langcode}/"}) }}"> {{langdata.lemma}}</a>
+				<a class="active" id="language-{{langcode}}" class="navigation-font" href="{{ request.langurl|replace({("/#{request.lang}/"): "/#{langcode}/"}) }}"> {{langdata.lemma}}</a>
 			{% endif %}
 		{% endfor %}
 	</div>
