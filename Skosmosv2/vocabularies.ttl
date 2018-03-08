@@ -19,10 +19,10 @@
     dc:subject :cat_general ;
     dc:type mdrtype:THESAURUS ;
     void:uriSpace "http://stad.gent/data/ns/";
-    skosmos:groupClass skos:Collection;
+    skosmos:groupClass skos:ConceptScheme;
     skosmos:language "nl";
     skosmos:shortName "trefwoorden";
   skosmos:feedbackRecipient "jos@lab9k.gent" ;
     skosmos:showChangeList "true" ;
     void:sparqlEndpoint <https://rdf.ontotext.com/4136314976/gent/repositories/gent> ;
-    skosmos:sparqlGraph <http://www.openrdf.org/schema/sesame#nil> . 
+    skosmos:sparqlGraph <http://www.openrdf.org/schema/sesame#nil> .
