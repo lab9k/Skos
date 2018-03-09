@@ -24,5 +24,6 @@
     skosmos:shortName "trefwoorden";
   skosmos:feedbackRecipient "jos@lab9k.gent" ;
     skosmos:showChangeList "true" ;
-    void:sparqlEndpoint <https://rdf.ontotext.com/4136314976/gent/repositories/gent> ;
+//    void:sparqlEndpoint <https://rdf.ontotext.com/4136314976/gent/repositories/gent> ;
+      void:sparqlEndpoint <https://rdf.ontotext.com/4136314976/gent/sparql> ;
     skosmos:sparqlGraph <http://www.openrdf.org/schema/sesame#nil> .

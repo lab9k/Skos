@@ -202,7 +202,7 @@ TSWLatexianTemp*
 ## Editors:
 # WinEdt
 *.bak
-*.sav
+*.savs
 
 # Texpad
 .texpadtmp
@@ -218,3 +218,4 @@ TSWLatexianTemp*
 
 # expex forward references with \gathertags
 *-tags.tex
+.DS_Store
