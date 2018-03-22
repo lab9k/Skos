@@ -11,7 +11,7 @@
 @prefix skosmos: <http://purl.org/net/skosmos#> .
 @prefix isothes: <http://purl.org/iso25964/skos-thes#> .
 @prefix mdrtype: <http://publications.europa.eu/resource/authority/dataset-type/> .
-@prefix : <#> .
+@prefix : <http://qa.stad.gent/id/> .
 
 :termen a skosmos:Vocabulary, void:Dataset ;
     dc:title "trefwoorden stad Ghent"@nl,
@@ -24,5 +24,5 @@
     skosmos:shortName "trefwoorden";
   skosmos:feedbackRecipient "jos@lab9k.gent" ;
     skosmos:showChangeList "true" ;
-    void:sparqlEndpoint <https://rdf.ontotext.com/4136314976/gent/repositories/gent> ;
-    skosmos:sparqlGraph <http://www.openrdf.org/schema/sesame#nil> .
+    void:sparqlEndpoint <https://qa.stad.gent/sparql> ;
+    skosmos:sparqlGraph <http://qa.stad.gent/vocabularies> .
