@@ -15,7 +15,7 @@
 
 :termen a skosmos:Vocabulary, void:Dataset ;
     dc:title "trefwoorden stad Ghent"@nl,
-        "keywords city of Ghent"@en ;
+        "keywords city of Gent"@en ;
     dc:subject :cat_general ;
     dc:type mdrtype:THESAURUS ;
     void:uriSpace "http://stad.gent/data/ns/";
