@@ -14,8 +14,8 @@
 @prefix : <http://qa.stad.gent/id/> .
 
 :termen a skosmos:Vocabulary, void:Dataset ;
-    dc:title "trefwoorden stad Ghent"@nl,
-        "keywords city of Gent"@en ;
+    dc:title "trefwoorden stad Gent"@nl,
+        "keywords city of Ghent"@en ;
     dc:subject :cat_general ;
     dc:type mdrtype:THESAURUS ;
     void:uriSpace "http://stad.gent/data/ns/";
